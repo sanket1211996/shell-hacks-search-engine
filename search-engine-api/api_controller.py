@@ -1,12 +1,9 @@
-from starlette.requests import Request
-from starlette.responses import Response
-
-import weatherApi as weatherApi
-from fastapi import FastAPI, HTTPException
 import uvicorn
-from fastapi.responses import FileResponse
+from fastapi import FastAPI
 from fastapi.middleware import Middleware
 from fastapi.middleware.cors import CORSMiddleware
+from starlette.requests import Request
+from starlette.responses import Response
 
 app = FastAPI()
 
